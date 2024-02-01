@@ -5,7 +5,7 @@ import '../medPages/child.dart';
 import '../medPages/diabetes.dart';
 import '../medPages/drinks.dart';
 import '../medPages/essential.dart';
-import '../medPages/fitness.dart';
+import '../medPages/general.dart';
 import '../medPages/skin.dart';
 
 class MyApp extends StatelessWidget {
@@ -679,14 +679,14 @@ class CustomContainer extends StatelessWidget {
                 ),
                 SizedBox(width: 45.0),
                 HoverImageWidget(
-                  image: 'assets/images/fitness.jpg',
-                  text: 'Fitness',
+                  image: 'assets/images/box.png',
+                  text: 'General Aid Box',
                   imageSize: 130.0,
                 ),
                 SizedBox(width: 45.0),
                 HoverImageWidget(
                   image: 'assets/images/covid.png',
-                  text: 'Covid Essentials',
+                  text: 'Essentials',
                   imageSize: 130.0,
                 ),
               ],
@@ -810,10 +810,10 @@ class _HoverImageWidgetState extends State<HoverImageWidget> {
         context,
         MaterialPageRoute(builder: (context) => Essentials()),
       );
-    } else if (widget.text == 'Fitness') {
+    } else if (widget.text == 'General Aid Box') {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => Fitness()),
+        MaterialPageRoute(builder: (context) => GeneralAidBox()),
       );
     } else if (widget.text == 'Drinks & Supplements') {
       Navigator.push(
